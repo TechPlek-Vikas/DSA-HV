@@ -26,3 +26,9 @@ The `RangeError: Maximum call stack size exceeded` occurs because JavaScript has
 - **Your Code**: If `arr.length` exceeds the stack limit, it throws this error.
 
 > 💡 **Tip:** Use an iterative solution for large datasets to avoid this issue.
+
+| Method             | Time Complexity | Space Complexity | Best Use Case                   |
+| ------------------ | --------------- | ---------------- | ------------------------------- |
+| `Math.max(...arr)` | O(n)            | O(n)             | Small/medium arrays             |
+| `for` loop         | O(n)            | O(1)             | Large arrays / memory-efficient |
+| `reduce()`         | O(n)            | O(1)             | Functional, clean code          |
